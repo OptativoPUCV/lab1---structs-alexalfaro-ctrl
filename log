@@ -59,3 +59,17 @@ exercises.c:146:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 ac25328
+Thu 17 Aug 2023 09:05:04 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:144:9: error: ‘Nodo’ {aka ‘struct nodo’} has no member named ‘nodo’
+  144 |     hola->nodo->siguiente=NULL;
+      |         ^~
+exercises.c:146:1: error: control reaches end of non-void function [-Werror=return-type]
+  146 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+56d6839
