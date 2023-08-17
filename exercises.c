@@ -143,4 +143,5 @@ Nodo *crearListaEnlazada(int arr[], int size) {
     hola->numero=arr[i];
     hola->siguiente=NULL;
   }
+  return hola;
 }

@@ -84,3 +84,18 @@ exercises.c:146:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 54b8ddb
+Thu 17 Aug 2023 09:05:57 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:146:10: error: ‘hola’ undeclared (first use in this function)
+  146 |   return hola;
+      |          ^~~~
+exercises.c:146:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:147:1: error: control reaches end of non-void function [-Werror=return-type]
+  147 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+fcafb0b
