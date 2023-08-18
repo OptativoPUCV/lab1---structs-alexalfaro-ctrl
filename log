@@ -120,3 +120,15 @@ exercises.c:149:15: error: ‘nuevoNodo’ undeclared (first use in this functio
       |               ^~~~~~~~~
 Compilation failed
 30c4ab8
+Fri 18 Aug 2023 10:54:27 PM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:148:18: error: ‘NUll’ undeclared (first use in this function); did you mean ‘NULL’?
+  148 |     if (primero==NUll){
+      |                  ^~~~
+      |                  NULL
+exercises.c:148:18: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+d0e7297
