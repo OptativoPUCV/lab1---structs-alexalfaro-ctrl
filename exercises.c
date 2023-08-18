@@ -90,8 +90,29 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
 int checkSorted(int arr[], int size) {
-return -2;
+  int ascending = 1;  // Flag para indicar si está ordenado de forma ascendente
+  int descending = 1; // Flag para indicar si está ordenado de forma descendente
+  
+  for (int i = 1; i < size; i++) {
+    if (arr[i] < arr[i - 1]) {
+      ascending = 0; // Ya no está ordenado de forma ascendente
+    }
+    if (arr[i] > arr[i - 1]) {
+      descending = 0; // Ya no está ordenado de forma descendente
+    }
+  }
+  
+  if (ascending && descending) {
+    return -1; // Está ordenado de forma desordenada
+  } else if (ascending) {
+    return 1; // Está ordenado de forma ascendente
+  } else if (descending) {
+    return -1; // Está ordenado de forma descendente
+  } else {
+    return 0; // Está desordenado
+  }
 }
+
 
 /*
 Ejercicio 6: Información de una Biblioteca
