@@ -132,3 +132,9 @@ exercises.c:148:18: error: ‘NUll’ undeclared (first use in this function); d
 exercises.c:148:18: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 d0e7297
+Fri 18 Aug 2023 10:54:37 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|1
+total_score: 60/70
+f479d80
